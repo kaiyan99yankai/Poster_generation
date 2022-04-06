@@ -1,0 +1,25 @@
+div {
+    width: 160px;
+    height: 90px;
+}
+
+#render {
+    background: #0000FF;
+}
+#curtain {
+    background: black;
+    opacity: 0;
+}
+
+.screen-change {
+    animation-name: screen-change;
+    animation-duration: 2s;
+}
+
+@keyframes screen-change {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    /* Waiting time */
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}

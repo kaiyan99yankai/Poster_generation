@@ -1,0 +1,22 @@
+<div id="render"><div id="curtain">dsfadsfasdfadsf</div></div>
+
+<button id="scene-changer" onclick="changeScene()">Change scene</button>
+<script>
+var color = "#0000FF";
+
+function changeScene() {
+// Trigger animation
+var div = document.getElementById("curtain");
+div.classList.remove("screen-change");
+div.offsetWidth;
+div.classList.add("screen-change");
+
+// Trigger scene change
+setTimeout(function() {
+// Your real code should go here. I've added something
+// just to demonstrate the change
+color = color == "#0000FF"? "#FF0000" : "#0000FF";
+document.getElementById("render").style.background = color;
+}, 1000);
+};
+</script>
